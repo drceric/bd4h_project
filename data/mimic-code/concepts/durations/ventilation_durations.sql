@@ -98,7 +98,7 @@ select icustay_id
   , ROW_NUMBER() over (partition by icustay_id order by ventnum) as ventnum
   , min(charttime) as starttime
   , max(charttime) as endtime
-  , (EXTRACT(EPOCH FROM (MAX(charttime) - MIN(charttime))) / 60)::numeric / 60 AS duration_hours
+  , (EXTRACT(EPOCH FROM (MAX(charttime) - MIN(charttime))) / 3600)::numeric  AS duration_hours
 from vd2
 group by icustay_id, vd2.ventnum
 having min(charttime) != max(charttime)
