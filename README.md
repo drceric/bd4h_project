@@ -6,19 +6,20 @@ The structure of the project are given below.
 - data
   1. data_synthetic - all the processed data that fed into the model
   2. mimic-code
-    a. this is the sql files that build all the data we need. Inthis folder, all the sql files under concepts folder are developed by our own (not the folder under concepts) 
-  3. query folder
-  4. mimic-iii-clinical-database-1.4 - the source data
-  5. sepsis_utils
-  6. static - this folder stored all the static data after processing.
-  7. 
+    - this is the sql files that build all the data we need. Inthis folder, all the sql files under concepts folder are developed by our own (not the folder under concepts) 
+  4. query 
+  5. mimic-iii-clinical-database-1.4 - the source data
+  6. sepsis_utils
+  7. static - this folder stored all the static data after processing.
+  8. mimic_simulation.ipynb - this is the notebook that we run the mimic based stnthetic simulation, based on the original and edit accordingly.
+  9. sepsis-3-get-data.ipynb - this is the notebook we extract our target data and processed the data.
 
 - dsw
 This is the package based on the original paper and code.
 
 - simulation
   1. full_synthetic_simulation.py - this it the pyhon file that run the original source simulation
-  2.   
+  2.  Please notice that the MIMIC-based simulation in under data folder.
 
 - model_eval.ipynb
 This is the notebook that run all the evaluation in our tables. Developed by our own.
