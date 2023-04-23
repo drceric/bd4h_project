@@ -23,3 +23,10 @@ This is the package based on the original paper and code.
 
 - model_eval.ipynb
 This is the notebook that run all the evaluation in our tables. Developed by our own.
+
+
+How to run the code?
+1. We assume the MIMIC dataset is available to the reader. If not, follow this https://doi.org/10.5281/zenodo.1256723 to build the databse. 
+2. If not building the database yourself, the data are available in the data_synthetic folder.
+3. model_eval.ipynb is the main code source we use for model.
+
