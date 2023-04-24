@@ -30,3 +30,6 @@ How to run the code?
 2. If not building the database yourself, the data are available in the data_synthetic folder.
 3. model_eval.ipynb is the main code source we use for model.
 
+Dependency
+The original repo is based on python 3.6, pytorch 1.4.
+But using the most recent Python 3.8 and the most recent Pytorch works.
